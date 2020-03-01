@@ -18,8 +18,6 @@ ROT=0
 # for EW in {0,.2,.4,.6,.8,1}; do
 for EB in {0,}; do
 for EW in {0,}; do
-MODEL_PATH=exps/run_BS_64_EPS_10_LR_1.0_GAMA_0.7_NONORM_1583071942/mnist.pth
-# MODEL_PATH=exps/run_BS_64_EPS_10_LR_1.0_GAMA_0.7_1583071938/mnist.pth
 MODEL_PATH=exps/run_BS_64_EPS_10_LR_1.0_GAMA_0.7_BN_NONORM_1583075232/mnist.pth
 python main.py --epochs $EPOCHS  --batch-size $BS --lr $LR --gamma $GAMMA --drop_out $DP --erase_b $EB --erase_w $EW --rotation $ROT --no-norm --test --batch-norm --model-path $MODEL_PATH
 python main.py --epochs $EPOCHS  --batch-size $BS --lr $LR --gamma $GAMMA --drop_out $DP --erase_b $EB --erase_w $EW --rotation $ROT --test --batch-norm --model-path $MODEL_PATH

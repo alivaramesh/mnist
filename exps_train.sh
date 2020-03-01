@@ -1,7 +1,5 @@
 #/bin/bash
 
-#python main.py --epochs  --batch-size --lr --gamma --drop_out --erase_b . --erase_w .
-
 DP0='none'
 DP1='6,.5'
 DP2='6,.5,7,.5'
@@ -20,7 +18,6 @@ for EB in {.6,}; do
 for EW in {1.,}; do
 python main.py --epochs $EPOCHS  --batch-size $BS --lr $LR --gamma $GAMMA --drop_out $DP --erase_b $EB --erase_w $EW --rotation $ROT
 #python main.py --epochs $EPOCHS  --batch-size $BS --lr $LR --gamma $GAMMA --drop_out $DP --erase_b $EB --erase_w $EW --ADAM
-# python main.py --epochs $EPOCHS  --batch-size $BS --lr $LR --gamma $GAMMA --drop_out $DP --erase_b $EB --erase_w $EW --rotation $ROT
 done
 done
 done
