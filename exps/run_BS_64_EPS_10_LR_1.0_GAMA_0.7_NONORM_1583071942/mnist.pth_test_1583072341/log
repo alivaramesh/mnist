@@ -1,0 +1,2 @@
+Command: main.py --epochs 10 --batch-size 64 --lr 1. --gamma .7 --drop_out none --erase_b 0 --erase_w 0 --rotation 0 --test --model-path exps/run_BS_64_EPS_10_LR_1.0_GAMA_0.7_NONORM_1583071942/mnist.pth
+final,0.10684776455163955,0.10684777162969113,0.10656738579273224,1.7870899319648743,5.904670715332031,98.28,98.28,98.28,79.06,59.15
